@@ -206,7 +206,8 @@
 			},
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": "https://rickandmortyapi.com/graphql"
 			},
 			"response": []
 		}
