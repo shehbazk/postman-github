@@ -7,7 +7,7 @@
 	"item": [
 		{
 			"name": "character",
-			"_postman_id": "8028cfd6-504d-4bc4-ae6b-40d60c257333",
+			"id": "8028cfd6-504d-4bc4-ae6b-40d60c257333",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -19,8 +19,7 @@
 					"graphql": {
 						"query": "query character($id: ID!) {\n  character(id: $id) {\n    __typename\n    id # The id of the character.\n    name # The name of the character.\n    status # The status of the character ('Alive', 'Dead' or 'unknown').\n    species # The species of the character.\n    type # The type or subspecies of the character.\n    gender # The gender of the character ('Female', 'Male', 'Genderless' or 'unknown').\n    # origin # The character's origin location\n    # location # The character's last known location\n    image # Link to the character's image. All images are 300x300px and most are medium shots or portraits since they are intended to be used as avatars.\n    # episode # Episodes in which this character appeared.\n    created # Time at which the character was created in the database.\n  }\n}",
 						"variables": "{\n\t\"id\": \"0\"\n}"
-					},
-					"options": {}
+					}
 				},
 				"url": "https://rickandmortyapi.com/graphql"
 			},
@@ -28,7 +27,7 @@
 		},
 		{
 			"name": "characters",
-			"_postman_id": "81bd0612-2396-4fa6-b861-09f72289a671",
+			"id": "81bd0612-2396-4fa6-b861-09f72289a671",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -40,8 +39,7 @@
 					"graphql": {
 						"query": "query characters($page: Int, $filter: FilterCharacter) {\n  characters(page: $page, filter: $filter) {\n    __typename\n    # info\n    # results\n  }\n}",
 						"variables": "{\n\t\"page\": null,\n\t\"filter\": null\n}"
-					},
-					"options": {}
+					}
 				},
 				"url": "https://rickandmortyapi.com/graphql"
 			},
@@ -49,7 +47,7 @@
 		},
 		{
 			"name": "charactersByIds",
-			"_postman_id": "61dc1855-dc9a-4ab5-a72c-a148a282ab02",
+			"id": "61dc1855-dc9a-4ab5-a72c-a148a282ab02",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -61,8 +59,7 @@
 					"graphql": {
 						"query": "query charactersByIds($ids: [ID!]!) {\n  charactersByIds(ids: $ids) {\n    __typename\n    id # The id of the character.\n    name # The name of the character.\n    status # The status of the character ('Alive', 'Dead' or 'unknown').\n    species # The species of the character.\n    type # The type or subspecies of the character.\n    gender # The gender of the character ('Female', 'Male', 'Genderless' or 'unknown').\n    # origin # The character's origin location\n    # location # The character's last known location\n    image # Link to the character's image. All images are 300x300px and most are medium shots or portraits since they are intended to be used as avatars.\n    # episode # Episodes in which this character appeared.\n    created # Time at which the character was created in the database.\n  }\n}",
 						"variables": "{\n\t\"ids\": [\"0\"]\n}"
-					},
-					"options": {}
+					}
 				},
 				"url": "https://rickandmortyapi.com/graphql"
 			},
@@ -70,7 +67,7 @@
 		},
 		{
 			"name": "location",
-			"_postman_id": "c885b8b4-8fdf-489b-a908-65aba439d72b",
+			"id": "c885b8b4-8fdf-489b-a908-65aba439d72b",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -82,8 +79,7 @@
 					"graphql": {
 						"query": "query location($id: ID!) {\n  location(id: $id) {\n    __typename\n    id # The id of the character.\n    name # The name of the character.\n    type # The type or subspecies of the character.\n    dimension # The dimension in which the location is located.\n    # residents # List of characters who have been last seen in the location.\n    created # Time at which the character was created in the database.\n  }\n}",
 						"variables": "{\n\t\"id\": \"0\"\n}"
-					},
-					"options": {}
+					}
 				},
 				"url": "https://rickandmortyapi.com/graphql"
 			},
@@ -91,7 +87,7 @@
 		},
 		{
 			"name": "locations",
-			"_postman_id": "8cdd2641-e48f-4b63-93a2-a8a81a1bb391",
+			"id": "8cdd2641-e48f-4b63-93a2-a8a81a1bb391",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -103,8 +99,7 @@
 					"graphql": {
 						"query": "query locations($page: Int, $filter: FilterLocation) {\n  locations(page: $page, filter: $filter) {\n    __typename\n    # info\n    # results\n  }\n}",
 						"variables": "{\n\t\"page\": null,\n\t\"filter\": null\n}"
-					},
-					"options": {}
+					}
 				},
 				"url": "https://rickandmortyapi.com/graphql"
 			},
@@ -112,7 +107,7 @@
 		},
 		{
 			"name": "locationsByIds",
-			"_postman_id": "4805f8a9-bf5b-4770-bede-56d4b79050b0",
+			"id": "4805f8a9-bf5b-4770-bede-56d4b79050b0",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -124,8 +119,7 @@
 					"graphql": {
 						"query": "query locationsByIds($ids: [ID!]!) {\n  locationsByIds(ids: $ids) {\n    __typename\n    id # The id of the character.\n    name # The name of the character.\n    type # The type or subspecies of the character.\n    dimension # The dimension in which the location is located.\n    # residents # List of characters who have been last seen in the location.\n    created # Time at which the character was created in the database.\n  }\n}",
 						"variables": "{\n\t\"ids\": [\"0\"]\n}"
-					},
-					"options": {}
+					}
 				},
 				"url": "https://rickandmortyapi.com/graphql"
 			},
@@ -133,7 +127,7 @@
 		},
 		{
 			"name": "episode",
-			"_postman_id": "604f5c1e-686f-4f55-b49c-74c3379294e0",
+			"id": "604f5c1e-686f-4f55-b49c-74c3379294e0",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -145,8 +139,7 @@
 					"graphql": {
 						"query": "query episode($id: ID!) {\n  episode(id: $id) {\n    __typename\n    id # The id of the character.\n    name # The name of the character.\n    air_date # The air date of the episode.\n    # episode # Episodes in which this character appeared.\n    # characters # List of characters who have been seen in the episode.\n    created # Time at which the character was created in the database.\n  }\n}",
 						"variables": "{\n\t\"id\": \"0\"\n}"
-					},
-					"options": {}
+					}
 				},
 				"url": "https://rickandmortyapi.com/graphql"
 			},
@@ -154,7 +147,7 @@
 		},
 		{
 			"name": "episodes",
-			"_postman_id": "49612207-1f68-4742-a1fb-d097845425f8",
+			"id": "49612207-1f68-4742-a1fb-d097845425f8",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -166,8 +159,7 @@
 					"graphql": {
 						"query": "query episodes($page: Int, $filter: FilterEpisode) {\n  episodes(page: $page, filter: $filter) {\n    __typename\n    # info\n    # results\n  }\n}",
 						"variables": "{\n\t\"page\": null,\n\t\"filter\": null\n}"
-					},
-					"options": {}
+					}
 				},
 				"url": "https://rickandmortyapi.com/graphql"
 			},
@@ -175,7 +167,7 @@
 		},
 		{
 			"name": "episodesByIds",
-			"_postman_id": "a314abf1-f243-4f93-8ac8-a82d94a41295",
+			"id": "a314abf1-f243-4f93-8ac8-a82d94a41295",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -187,8 +179,7 @@
 					"graphql": {
 						"query": "query episodesByIds($ids: [ID!]!) {\n  episodesByIds(ids: $ids) {\n    __typename\n    id # The id of the character.\n    name # The name of the character.\n    air_date # The air date of the episode.\n    # episode # Episodes in which this character appeared.\n    # characters # List of characters who have been seen in the episode.\n    created # Time at which the character was created in the database.\n  }\n}",
 						"variables": "{\n\t\"ids\": [\"0\"]\n}"
-					},
-					"options": {}
+					}
 				},
 				"url": "https://rickandmortyapi.com/graphql"
 			},
@@ -196,7 +187,7 @@
 		},
 		{
 			"name": "New req",
-			"_postman_id": "34b509a7-15c8-4c95-8eaf-d2518d7d8ebe",
+			"id": "34b509a7-15c8-4c95-8eaf-d2518d7d8ebe",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -204,6 +195,18 @@
 				"method": "GET",
 				"header": [],
 				"url": "https://rickandmortyapi.com/graphql"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "e20d2c94-431c-4199-873d-f846b65b6555",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
 			},
 			"response": []
 		}
