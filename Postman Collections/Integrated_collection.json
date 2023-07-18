@@ -67,6 +67,18 @@
 		},
 		{
 			"name": "location",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "e4b25b20-6279-4eaf-be4a-0e99e47f7d41",
+						"exec": [
+							"console.log(\"Edited\")"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "c885b8b4-8fdf-489b-a908-65aba439d72b",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
