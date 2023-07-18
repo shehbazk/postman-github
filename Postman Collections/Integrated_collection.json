@@ -149,7 +149,7 @@
 				"body": {
 					"mode": "graphql",
 					"graphql": {
-						"query": "query episode($id: ID!) {\n  episode(id: $id) {\n    __typename\n    id # The id of the character.\n    name # The name of the character.\n    air_date # The air date of the episode.\n    # episode # Episodes in which this character appeared.\n    # characters # List of characters who have been seen in the episode.\n    created # Time at which the character was created in the database.\n  }\n}",
+						"query": "query episode($id: ID!) {\n  episode(id: $id) {\n    __typename\n    id # The id of the character.\n    name # The name of the character.\n    air_date # The air date of the episode.\n    # episode # Episodes in which this character appeared.\n    # characters # List of characters who have been seen in the episode.\n    created # Time at which the character was created in the database.\n    # Comment\n  }\n}",
 						"variables": "{\n\t\"id\": \"0\"\n}"
 					}
 				},
