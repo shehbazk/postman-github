@@ -77,7 +77,7 @@
 				"body": {
 					"mode": "graphql",
 					"graphql": {
-						"query": "query location($id: ID!) {\n  location(id: $id) {\n    __typename\n    id # The id of the character.\n    name # The name of the character.\n    type # The type or subspecies of the character.\n    dimension # The dimension in which the location is located.\n    # residents # List of characters who have been last seen in the location.\n    created # Time at which the character was created in the database.\n  }\n}",
+						"query": "query location($id: ID!) {\n  location(id: $id) {\n    __typename\n    id # The id of the character.\n    name # The name of the character.\n    type # The type or subspecies of the character.\n    dimension # The dimension in which the location is located.\n    # residents # List of characters who have been last seen in the location.\n    created # Time at which the character was created in the database.\n    \n  }\n}",
 						"variables": "{\n\t\"id\": \"0\"\n}"
 					}
 				},
